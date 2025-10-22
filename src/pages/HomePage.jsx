@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { LogIn, UserPlus, Zap, LayoutDashboard, MessageSquare, Sun, Moon } from 'lucide-react';
+import ExpenseTracker from '../components/ExpenseTracker';
 
 // Main App component that simulates the HomePage.jsx file
 
@@ -154,6 +155,7 @@ const HomePage = () => {
             </div>
           </div>
           
+
           {/* Mockup Illustration - Uses responsive width */}
           <div className="lg:w-1/2 w-full flex justify-center relative p-4 sm:p-8">
             <svg
@@ -178,6 +180,9 @@ const HomePage = () => {
             </svg>
           </div>
         </section>
+<section className="py-16 border-t border-gray-200 dark:border-gray-700">
+  <ExpenseTracker />
+</section>
 
         {/* 2. Core Features Showcase (Mobile grid adjustment) */}
         <section className="py-16">
